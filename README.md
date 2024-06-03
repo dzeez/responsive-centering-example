@@ -1,1 +1,0 @@
-# responsive-centering-example
