@@ -1,0 +1,43 @@
+<!DOCTYPE html> <html><head>
+        <title>responsive centering example</title>
+    <style>/* responsive centered text snippet */
+/* dsd 2022-11-11 */
+
+/* how does this work:
+simple case of flexbox-based container centering, along with a max-width on the content and a margin on the body, both of which work to ensure a cleanly
+responsive box that works on screens large and small. The text never gets annoyingly wide and hard to read on wide viewports; on small/vertical screens, it shrinks to fit, while maintaining some spacing between content and edges */
+
+body {
+    /* the margin serves to maintain a minimum of "padding" even on very small screens, so content isn't right up against edges */
+    margin: 2rem 3rem;
+    /*     border: 1px solid coral; */
+    display: flex;
+    justify-content: center;
+    /*     align-items: flex-end; */
+    /*     flex-flow: column nowrap; */
+    /*     background-color: papayawhip; */
+
+}
+
+section {
+    /*     display: flex;
+    flex: 0 auto;
+    flex-flow: column nowrap; */
+
+    max-width: 40rem;
+    font-size: 1.5rem;
+    line-height: 140%;
+    border: 1px solid firebrick;
+}
+
+/* --widthv:100px; */
+/*  vars don't apppear to be supported... */</style></head>
+    <body>
+        <section>
+            <h1>The Title</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </section>
+    
+</body></html>
